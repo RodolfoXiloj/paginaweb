@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReNova</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/funciones.js"></script>
+</head>
+
+<body>
+  <div class="barra-contacto">
+  <a href="mailto:jafeth32q@gmail.com">📧 Correo</a>
+  <a href="https://wa.me/50247249456" target="_blank">💬 WhatsApp</a>
+  <a href="tel:+5047249456+-">📞Llamanos</a>
+</div>
+
+  <nav class="menu-fijo">
+    <div class="contenedor-menu">
+    <div class="logo logo_renova">
+      <img src="images/logo_renova.png" alt="Logo renova" />
+    </div>
+
+    <ul>
+      <li><a href="#">inicio</a></li>
+      <li><a href="#Clasificador">Clasificador de desechos</a></li>
+      <li><a href="#calculadora">calculadora Ecológica</a></li>
+      <li><a href="#">Puntos de Reciclaje</a></li>
+    </ul>
+  </nav>
+
+
+
+  <header>
+     <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="images/imagen_renova1.jpg" style="width:100%">
+      <div class="text-overlay">
+        <h2>¡CUIDEMOS AL PLANETA!!!</h2>
+        <p>TU PUEDES HACER LA DIFERENCIA.</p>
+      </div>
+    </div>
+    <div class="mySlides fade">
+      <img src="images/imagen_renova2.jpg" style="width:100%">
+      <div class="text-overlay">
+        <h2>¡REDUCE, REUTILIZA, RECICLA!</h2>
+        <p>PEQUEÑAS ACCIONES, GRANDES CAMBIOS.</p>
+      </div>
+    </div>
+    <div class="mySlides fade">
+      <img src="images/imagen_renova3.jpg" style="width:100%">
+      <div class="text-overlay">
+        <h2>ENERGÍA LIMPIA PARA UN FUTURO MEJOR</h2>
+        <p>APUESTA POR LAS ENERGÍAS RENOVABLES.</p>
+      </div>
+    </div>
+    
+  </header> <br>
+
+  <div class="barra-informativa">
+      <div class="contenedor-botones">
+      <a href="#" target="_blank" class="mi-boton">ReNova</a>
+         <a href="#" target="_blank" class="mi-boton">FORMULARIO</a>
+         <a href="#" target="_blank" class="mi-boton">RECICLAJE</a>
+         <a href="#" target="_blank" class="mi-boton">GESTIÓN DE RESIDUOS</a>
+         <a href="#" target="_blank" class="mi-boton"> CONSULTORIA</a>
+         <a href="#" target="_blank" class="mi-boton">RESEÑAS</a>
+          <a href="#" target="_blank" class="mi-boton">VIDEOS</a>
+      </div>
+    
+
+  <main>
+
+    <section>
+        <h1>Bienvenido a ReNova!!!!</h1>
+        <p>
+          <h3>Una plataforma educativa y divertida para aprender a reciclar. Cada acción cuenta.
+        Clasifica residuos, protege el planeta y acumula puntos para desbloquear increíbles recompensas.</h3>
+      </p><br>
+         <h1> ¡Tu compromiso con el reciclaje ahora tiene beneficios!</h1>
+    </section>
+    
+    <section>
+      <div class="contenedor">
+        <h2>¡Hola! Soy <strong>Eco</strong>, tu compañero en esta aventura ecológica. 🌎💚</h2>
+        <img src="images/mascota_renova.png" alt="mascota renova" height="250" class="images" >
+        <p class="texto"> <h4>Te invito a explorar nuestras herramientas y descubrir cómo puedes contribuir al cuidado del planeta. ¡Vamos juntos hacia un futuro más sostenible! 🌱✨.</h4></p>
+      </div>
+    </section>
+
+    <section id="Clasificador"> 
+      <h1>Clasificador de Desechos</h1>
+    <p>Ingresa el nombre de un residuo para conocer su tipo.</p>
+    <input type="text" id="nombreResiduo" placeholder="Ejemplo: manzana">
+    <button onclick="clasificarResiduo()">Clasificar</button>
+    <div id="resultado"></div>
+    </section>
+
+    <section>
+      <div class="contenido-banner">
+        <img src="images/banner_renova.jpg" alt="banner renova" height="100"/>
+        <h1></h1>
+        <p></p>
+      </div>
+    </section>
+
+    <section id="calculadora">
+    <h2>Calculadora Ecológica</h2>
+    <p>Descubre cuánto ayudas al planeta reciclando:</p>
+    
+    <label for="material">Tipo de material:</label>
+    <select id="material">
+      <option value="papel">Papel</option>
+      <option value="plastico">Plástico</option>
+      <option value="vidrio">Vidrio</option>
+      <option value="metal">Metal</option>
+    </select><br>
+
+    <label for="cantidad">Cantidad reciclada (kg por semana):</label>
+    <input type="number" id="cantidad" min="0" placeholder="Ejemplo: 5"> <br>
+
+    <button onclick="calcularImpacto()">Calcular impacto</button>
+    <div id="resultados"></div>
+
+  </main>
+  <footer>
+    <p>&copy; 2025 ReNova - Todos los derechos reservados</p>
+  </footer>
+
+  
+</body>
+</html>
