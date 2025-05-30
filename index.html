@@ -1,134 +1,293 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ReNova</title>
   <link rel="stylesheet" href="css/estilo.css">
-  <script src="js/funciones.js"></script>
+  <script src="js/funciones.js" defer></script>
 </head>
 
 <body>
-  <div class="barra-contacto">
-  <a href="mailto:jafeth32q@gmail.com">📧 Correo</a>
-  <a href="https://wa.me/50247249456" target="_blank">💬 WhatsApp</a>
-  <a href="tel:+5047249456+-">📞Llamanos</a>
-</div>
-
-  <nav class="menu-fijo">
-    <div class="contenedor-menu">
-    <div class="logo logo_renova">
-      <img src="images/logo_renova.png" alt="Logo renova" />
-    </div>
-
-    <ul>
-      <li><a href="#">inicio</a></li>
-      <li><a href="#Clasificador">Clasificador de desechos</a></li>
-      <li><a href="#calculadora">calculadora Ecológica</a></li>
-      <li><a href="#">Puntos de Reciclaje</a></li>
-      <li><a href="#contacto">Contactanos</a></li>
-    </ul>
-  </nav>
-
-
-
   <header>
-     <div class="slideshow-container">
+    <div class="barra-contacto" role="navigation" aria-label="Contacto rápido">
+      <a href="mailto:jafeth32q@gmail.com"><span class="icono-contacto">📧</span>Correo</a>
+      <a href="https://wa.me/50247249456" target="_blank" rel="noopener"><span class="icono-contacto">💬</span>WhatsApp</a>
+      <a href="tel:+5047249456"><span class="icono-contacto">📞</span>Llámanos</a>
+    </div>
+    <nav class="menu-fijo" aria-label="Menú principal">
+      <div class="contenedor-menu">
+        <div class="logo logo_renova">
+          <img src="images/logo_renova.png" alt="Logo ReNova" />
+        </div>
+        <ul>
+          <li><a href="#" aria-current="page">Inicio</a></li>
+          <li><a href="#Clasificador">Clasificador</a></li>
+          <li><a href="#calculadora">Calculadora</a></li>
+          <li><a href="#puntos">Puntos de Reciclaje</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Carrusel de imágenes entre menú fijo y barra informativa -->
+  <div class="slideshow-container" aria-label="Presentación de imágenes">
     <div class="mySlides fade">
-      <img src="images/imagen_renova1.jpg" style="width:100%">
+      <img src="images/imagen_renova1.jpg" alt="Recicla 1">
       <div class="text-overlay">
-        <h2>¡CUIDEMOS AL PLANETA!!!</h2>
+        <h2>¡CUIDEMOS AL PLANETA!</h2>
         <p>TU PUEDES HACER LA DIFERENCIA.</p>
       </div>
     </div>
     <div class="mySlides fade">
-      <img src="images/imagen_renova2.jpg" style="width:100%">
+      <img src="images/imagen_renova2.jpg" alt="Recicla 2">
       <div class="text-overlay">
         <h2>¡REDUCE, REUTILIZA, RECICLA!</h2>
         <p>PEQUEÑAS ACCIONES, GRANDES CAMBIOS.</p>
       </div>
     </div>
     <div class="mySlides fade">
-      <img src="images/imagen_renova3.jpg" style="width:100%">
+      <img src="images/imagen_renova3.jpg" alt="Recicla 3">
       <div class="text-overlay">
         <h2>ENERGÍA LIMPIA PARA UN FUTURO MEJOR</h2>
         <p>APUESTA POR LAS ENERGÍAS RENOVABLES.</p>
       </div>
     </div>
-    
-  </header> <br>
+  </div>
+  <nav class="barra-informativa" aria-label="Accesos rápidos">
+    <div class="contenedor-botones">
+      <a href="#" class="mi-boton">ReNova</a>
+      <a href="#" class="mi-boton">Formulario</a>
+      <a href="#" class="mi-boton">Reciclaje</a>
+      <a href="#" class="mi-boton">Gestión de Residuos</a>
+      <a href="#" class="mi-boton">Consultoría</a>
+      <a href="#" class="mi-boton">Reseñas</a>
+      <a href="#" class="mi-boton">Videos</a>
+    </div>
+  </nav>
+  <main id="main-content">
+    <div id="inicio-renova">
+      <section aria-labelledby="bienvenida-renova">
+        <h1 id="bienvenida-renova">Bienvenido a ReNova</h1>
+        <h2 class="visually-hidden">Plataforma educativa de reciclaje</h2>
+        <p class="intro">Una plataforma educativa y divertida para aprender a reciclar. Cada acción cuenta.<br>
+          Clasifica residuos, protege el planeta y acumula puntos para desbloquear increíbles recompensas.</p>
+        <h2>¡Tu compromiso con el reciclaje ahora tiene beneficios!</h2>
+        <ul>
+          <li><strong>¿Sabías que...?</strong> Reciclar una tonelada de papel puede salvar hasta 17 árboles y 26.500 litros de agua. <em>(Fuente: WWF)</em></li>
+          <li><strong>El plástico</strong> puede tardar hasta 500 años en degradarse. ¡Reciclarlo es vital para el planeta!</li>
+          <li><strong>El vidrio</strong> es 100% reciclable y puede reutilizarse infinitas veces sin perder calidad.</li>
+          <li><strong>Reciclar aluminio</strong> ahorra hasta un 95% de la energía necesaria para producirlo desde materia prima.</li>
+        </ul>
+        <section class="bienvenida-eco" aria-labelledby="eco-mascota">
+          <div class="contenedor">
+            <div class="bienvenida-texto">
+              <h2 id="eco-mascota">¡Hola! Soy <strong>Eco</strong>, tu compañero en esta aventura ecológica. 🌎💚</h2>
+              <p>Te invito a explorar nuestras herramientas y descubrir cómo puedes contribuir al cuidado del planeta.<br>
+                ¡Vamos juntos hacia un futuro más sostenible! 🌱✨</p>
+              <ul>
+                <li>Explora el <strong>Clasificador de Desechos</strong> para aprender a separar correctamente tus residuos.</li>
+                <li>Usa la <strong>Calculadora Ecológica</strong> y descubre el impacto positivo de tus acciones.</li>
+                <li>Encuentra <strong>Puntos de Reciclaje</strong> cercanos y lleva tus materiales reciclables.</li>
+                <li>Comparte tus logros y motiva a otros a sumarse al cambio.</li>
+              </ul>
+            </div>
+            <img src="images/mascota_renova.png" alt="Mascota Eco de ReNova" class="mascota-eco">
+          </div>
+        </section>
+      </section>
+    </div>
+    <div class="subpagina" id="sub-formulario" style="display:none">
+      <section>
+        <h2>Formulario de Contacto</h2>
+        <form id="form-contacto" autocomplete="off" aria-label="Formulario de contacto">
+          <label for="nombreContacto">Nombre:</label>
+          <input type="text" id="nombreContacto" name="nombre" required placeholder="Tu nombre">
 
-  <div class="barra-informativa">
-      <div class="contenedor-botones">
-      <a href="#" target="_blank" class="mi-boton">ReNova</a>
-         <a href="#" target="_blank" class="mi-boton">FORMULARIO</a>
-         <a href="#" target="_blank" class="mi-boton">RECICLAJE</a>
-         <a href="#" target="_blank" class="mi-boton">GESTIÓN DE RESIDUOS</a>
-         <a href="#" target="_blank" class="mi-boton"> CONSULTORIA</a>
-         <a href="#" target="_blank" class="mi-boton">RESEÑAS</a>
-          <a href="#" target="_blank" class="mi-boton">VIDEOS</a>
+          <label for="correoContacto">Correo electrónico:</label>
+          <input type="email" id="correoContacto" name="correo" required placeholder="tucorreo@ejemplo.com">
 
-      </div>
-    
+          <label for="asuntoContacto">Asunto:</label>
+          <input type="text" id="asuntoContacto" name="asunto" required placeholder="Motivo de tu mensaje">
 
-  <main>
+          <label for="mensajeContacto">Mensaje:</label>
+          <textarea id="mensajeContacto" name="mensaje" required rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
 
-    <section>
-        <h1>Bienvenido a ReNova!!!!</h1>
-        <p>
-          <h3>Una plataforma educativa y divertida para aprender a reciclar. Cada acción cuenta.
-        Clasifica residuos, protege el planeta y acumula puntos para desbloquear increíbles recompensas.</h3>
-      </p><br>
-         <h1> ¡Tu compromiso con el reciclaje ahora tiene beneficios!</h1>
-    </section>
-    
-    <section>
-      <div class="contenedor">
-        <h2>¡Hola! Soy <strong>Eco</strong>, tu compañero en esta aventura ecológica. 🌎💚</h2>
-        <img src="images/mascota_renova.png" alt="mascota renova" height="250" class="images" >
-        <p class="texto"> <h4>Te invito a explorar nuestras herramientas y descubrir cómo puedes contribuir al cuidado del planeta. ¡Vamos juntos hacia un futuro más sostenible! 🌱✨.</h4></p>
-      </div>
-    </section>
-
-    <section id="Clasificador"> 
-      <h1>Clasificador de Desechos</h1>
-    <p>Ingresa el nombre de un residuo para conocer su tipo.</p>
-    <input type="text" id="nombreResiduo" placeholder="Ejemplo: manzana">
-    <button onclick="clasificarResiduo()">Clasificar</button>
-    <div id="resultado"></div>
-    </section>
-
-    <section>
-      <div class="contenido-banner">
-        <img src="images/banner_renova.jpg" alt="banner renova" height="100"/>
-        <h1></h1>
-        <p></p>
-      </div>
-    </section>
-
-    <section id="calculadora">
-    <h2>Calculadora Ecológica</h2>
-    <p>Descubre cuánto ayudas al planeta reciclando:</p>
-    
-    <label for="material">Tipo de material:</label>
-    <select id="material">
-      <option value="papel">Papel</option>
-      <option value="plastico">Plástico</option>
-      <option value="vidrio">Vidrio</option>
-      <option value="metal">Metal</option>
-    </select><br>
-
-    <label for="cantidad">Cantidad reciclada (kg por semana):</label>
-    <input type="number" id="cantidad" min="0" placeholder="Ejemplo: 5"> <br>
-
-    <button onclick="calcularImpacto()">Calcular impacto</button>
-    <div id="resultados"></div>
-
+          <button type="submit">Enviar</button>
+        </form>
+        <div id="mensaje-form-contacto" aria-live="polite" style="margin-top:16px;"></div>
+      </section>
+    </div>
+    <div class="subpagina" id="sub-reciclaje" style="display:none">
+      <section id="Clasificador" aria-labelledby="titulo-clasificador">
+        <h2 id="titulo-clasificador">Clasificador de Desechos</h2>
+        <form onsubmit="clasificarResiduo(); return false;" aria-label="Clasificador de residuos">
+          <label for="nombreResiduo">Ingresa el nombre de un residuo para conocer su tipo:</label>
+          <input type="text" id="nombreResiduo" placeholder="Ejemplo: manzana" autocomplete="off">
+          <button type="submit">Clasificar</button>
+        </form>
+        <div id="resultado" aria-live="polite"></div>
+        <div class="info-extra">
+          <h3>¿Por qué es importante clasificar?</h3>
+          <ul>
+            <li>Evita la contaminación cruzada y facilita el reciclaje.</li>
+            <li>Reduce la cantidad de residuos que llegan a los vertederos.</li>
+            <li>Permite aprovechar mejor los recursos y ahorrar energía.</li>
+          </ul>
+          <p><strong>Consejo:</strong> Limpia los envases antes de reciclarlos y separa los materiales según las normas de tu ciudad.</p>
+        </div>
+      </section>
+    </div>
+    <div class="subpagina" id="sub-gestion" style="display:none">
+      <section>
+        <h2>Gestión de Residuos</h2>
+        <p>La gestión adecuada de los residuos es fundamental para proteger el medio ambiente y la salud pública. Aquí tienes algunos consejos y pasos para una gestión responsable:</p>
+        <ul>
+          <li><strong>Reduce:</strong> Evita generar residuos innecesarios. Compra solo lo que necesitas y elige productos con menos empaque.</li>
+          <li><strong>Reutiliza:</strong> Da una segunda vida a los objetos antes de desecharlos. Usa bolsas reutilizables, envases y recipientes.</li>
+          <li><strong>Recicla:</strong> Separa correctamente los residuos reciclables (plástico, papel, vidrio, metal) y llévalos a los puntos de reciclaje.</li>
+          <li><strong>Composta:</strong> Los residuos orgánicos pueden convertirse en abono natural para plantas y jardines.</li>
+          <li><strong>Deposita correctamente:</strong> Los residuos peligrosos (pilas, electrónicos, medicamentos) deben llevarse a centros especializados.</li>
+        </ul>
+        <h3>¿Por qué es importante la gestión de residuos?</h3>
+        <ul>
+          <li>Reduce la contaminación del suelo, agua y aire.</li>
+          <li>Disminuye la cantidad de basura en vertederos.</li>
+          <li>Conserva recursos naturales y energía.</li>
+          <li>Previene enfermedades y mejora la calidad de vida.</li>
+        </ul>
+        <h3>Recursos adicionales</h3>
+        <ul>
+          <li><a href="https://www.wwf.org.mx/que_hacemos/cambio_climatico/residuos/" target="_blank" rel="noopener">WWF: Residuos y reciclaje</a></li>
+          <li><a href="https://www.ecologiaverde.com/gestion-de-residuos/" target="_blank" rel="noopener">Ecología Verde: Gestión de residuos</a></li>
+          <li><a href="https://www.gob.mx/semarnat/acciones-y-programas/gestion-integral-de-residuos" target="_blank" rel="noopener">SEMARNAT: Gestión integral de residuos</a></li>
+        </ul>
+        <div class="contenido-banner">
+          <img src="images/banner_renova.jpg" alt="Banner informativo de reciclaje" class="banner-img" />
+        </div>
+      </section>
+    </div>
+    <div class="subpagina" id="sub-consultoria" style="display:none">
+      <section>
+        <h2>Consultoría</h2>
+        <p>¿Quieres mejorar la gestión de residuos en tu empresa, escuela, comunidad o familia? En ReNova te ofrecemos asesoría personalizada para ayudarte a implementar prácticas sostenibles y responsables.</p>
+        <h3>¿En qué podemos ayudarte?</h3>
+        <ul>
+          <li>Diseño de programas de reciclaje y reducción de residuos.</li>
+          <li>Capacitación y talleres para empleados, estudiantes o vecinos.</li>
+          <li>Diagnóstico ambiental y recomendaciones para optimizar recursos.</li>
+          <li>Implementación de campañas de sensibilización ecológica.</li>
+          <li>Asesoría en compostaje y gestión de residuos orgánicos.</li>
+          <li>Guía para la correcta disposición de residuos peligrosos y electrónicos.</li>
+        </ul>
+        <h3>¿Quiénes pueden solicitar consultoría?</h3>
+        <ul>
+          <li><strong>Empresas:</strong> Mejora tu imagen y cumple con normativas ambientales.</li>
+          <li><strong>Escuelas:</strong> Educa a las nuevas generaciones en sostenibilidad.</li>
+          <li><strong>Familias y comunidades:</strong> Haz la diferencia desde casa y tu entorno.</li>
+        </ul>
+        <h3>¿Cómo solicitar asesoría?</h3>
+        <ol>
+          <li>Contáctanos a través del <strong>Formulario de Contacto</strong> indicando tu interés en consultoría.</li>
+          <li>Cuéntanos tu situación y objetivos.</li>
+          <li>Recibe una propuesta personalizada y acompáñanos en el proceso de cambio.</li>
+        </ol>
+        <p>¡Juntos podemos crear un futuro más limpio y sostenible! 🌱</p>
+      </section>
+    </div>
+    <div class="subpagina" id="sub-resenas" style="display:none">
+      <section>
+        <h2>Reseñas</h2>
+        <div class="resenas-lista">
+          <div class="resena-item">
+            <div class="resena-header"><strong>María López</strong> <span class="resena-estrellas">★★★★★</span></div>
+            <p>¡Excelente plataforma! Aprendí mucho sobre reciclaje y ahora mi familia separa los residuos correctamente.</p>
+          </div>
+          <div class="resena-item">
+            <div class="resena-header"><strong>Carlos Méndez</strong> <span class="resena-estrellas">★★★★☆</span></div>
+            <p>La calculadora ecológica me motivó a reciclar más. ¡Muy recomendable para escuelas!</p>
+          </div>
+          <div class="resena-item">
+            <div class="resena-header"><strong>Ana Ruiz</strong> <span class="resena-estrellas">★★★★★</span></div>
+            <p>Solicité consultoría y nos ayudaron a implementar un programa de reciclaje en la oficina. ¡Gracias ReNova!</p>
+          </div>
+          <div class="resena-item">
+            <div class="resena-header"><strong>Jorge Castillo</strong> <span class="resena-estrellas">★★★☆☆</span></div>
+            <p>Me gustaría ver más videos educativos, pero la información es clara y útil.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="subpagina" id="sub-videos" style="display:none">
+      <section>
+        <h2>Videos</h2>
+        <div class="videos-galeria">
+          <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/6jQ7y_qQYUA" title="¿Por qué es importante reciclar?" frameborder="0" allowfullscreen loading="lazy"></iframe>
+            <p>¿Por qué es importante reciclar?</p>
+          </div>
+          <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/6v2L2UGZJAM" title="¿Cómo separar residuos?" frameborder="0" allowfullscreen loading="lazy"></iframe>
+            <p>¿Cómo separar residuos?</p>
+          </div>
+          <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/WVrxkF6TcQU" title="Reciclaje para niños - Aprende a reciclar" frameborder="0" allowfullscreen loading="lazy"></iframe>
+            <p>Reciclaje para niños - Aprende a reciclar</p>
+          </div>
+          <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/nvUqnpicSd0" title="¿Qué es la economía circular?" frameborder="0" allowfullscreen loading="lazy"></iframe>
+            <p>¿Qué es la economía circular?</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="subpagina" id="sub-calculadora" style="display:none">
+      <section id="calculadora" aria-labelledby="titulo-calculadora">
+        <h2 id="titulo-calculadora">Calculadora Ecológica</h2>
+        <form onsubmit="calcularImpacto(); return false;" aria-label="Calculadora ecológica">
+          <label for="material">Tipo de material:</label>
+          <select id="material">
+            <option value="papel">Papel</option>
+            <option value="plastico">Plástico</option>
+            <option value="vidrio">Vidrio</option>
+            <option value="metal">Metal</option>
+          </select><br>
+          <label for="cantidad">Cantidad reciclada (kg por semana):</label>
+          <input type="number" id="cantidad" min="0" placeholder="Ejemplo: 5"> <br>
+          <button type="submit">Calcular impacto</button>
+        </form>
+        <div id="resultados" aria-live="polite"></div>
+        <div class="info-extra">
+          <h3>¿Sabías que...?</h3>
+          <ul>
+            <li>Reciclar 1 kg de papel ahorra 7 litros de agua y evita la emisión de 1,5 kg de CO₂.</li>
+            <li>Reciclar 1 kg de plástico ahorra suficiente energía para mantener una bombilla encendida durante 6 horas.</li>
+            <li>Reciclar vidrio reduce la contaminación del aire en un 20% y del agua en un 50%.</li>
+          </ul>
+          <p><strong>Tip ecológico:</strong> ¡Recicla siempre que puedas y comparte estos datos con tu familia y amigos!</p>
+        </div>
+      </section>
+    </div>
+    <div class="subpagina" id="sub-puntos" style="display:none">
+      <section id="puntos" aria-labelledby="titulo-puntos">
+        <h2 id="titulo-puntos">Puntos de Reciclaje</h2>
+        <div class="info-extra">
+          <h3>¿Dónde reciclar?</h3>
+          <ul>
+            <li>Busca centros de acopio, supermercados o puntos verdes en tu ciudad.</li>
+            <li>Algunas municipalidades ofrecen recolección selectiva a domicilio.</li>
+            <li>Consulta apps y webs oficiales para encontrar el punto más cercano.</li>
+          </ul>
+          <p><strong>Recuerda:</strong> ¡Reciclar es un acto de amor por el planeta y por las futuras generaciones!</p>
+        </div>
+        <div id="mapa-reciclaje" style="width:100%;height:350px;border-radius:12px;margin-top:18px;background:#e0e0e0;text-align:center;line-height:350px;">Cargando mapa...</div>
+      </section>
+    </div>
   </main>
-  <footer id="contacto">
+  <footer>
     <p>&copy; 2025 ReNova - Todos los derechos reservados</p>
   </footer>
-
-  
+  <script src="https://cdn.jsdelivr.net/gh/somanchiu/Keyless-Google-Maps-API@v7.0/mapsJavaScriptAPI.js?callback=initMapaReciclaje" async defer></script>
 </body>
+
 </html>
